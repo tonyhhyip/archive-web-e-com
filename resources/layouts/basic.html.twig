@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-hk">
+
+<head>
+    {% block meta %}
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    {% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+
+    {% block stylesheet %}
+    {% endblock %}
+
+</head>
+
+<body>
+
+{% block navbar %}{% endblock %}
+
+{% block wrap %}{% endblock %}
+
+{% block footer %}{% endblock %}
+
+{% block scripts %}{% endblock %}
+
+</body>
+
+</html>
