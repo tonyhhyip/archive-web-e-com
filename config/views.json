@@ -1,0 +1,7 @@
+[
+  {
+    "path": "/",
+    "name": "home",
+    "view": "index.html"
+  }
+]
