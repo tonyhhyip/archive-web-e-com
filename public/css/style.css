@@ -1,9 +1,45 @@
-@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
 body {
-    background-color: #000000;
-    font-family: 'Share Tech Mono', sans-serif;
+    background-color: #000027;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.65em;
+    color: #ffffff;
+}
+
+.tech {
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+
+.brand-red {
+    color: #F92672 !important;
 }
 
 .brand-green {
-    color: #57FF36;
+    color: #57FF36 !important;
+}
+
+.brand-blue {
+    color: #66D9EF !important;
+}
+
+.brand-yellow {
+    color: #E6DB74 !important;
+}
+
+.navbar .container {
+    background-color: #000000 !important;
+}
+
+.navbar a {
+    color: #F92672 !important;
+}
+
+a {
+    color: #F92672;
+}
+
+a:hover {
+    color: #F92672 !important;
 }
