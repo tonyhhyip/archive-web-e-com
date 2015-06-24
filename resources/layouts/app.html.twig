@@ -1,0 +1,55 @@
+{% extends "layouts/bootstrap.html.twig" %}
+
+{% block stylesheet %}
+{{ parent() }}
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block scripts %}
+{{ parent() }}
+<script src="/js/main.js"></script>
+{% endblock %}
+
+{% block title %}E-commerce, Trend of Modern{% endblock %}
+
+{% block header %}
+<h1 class="brand-green" style="text-align: center;">E-commerce, Trend of Modern</h1>
+<div class="container">
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><strong class="glyphicon glyphicon-home"></strong></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/intro">What's E-commerce?</a></li>
+                    <li><a href="/benifit">Benifit &amp; Harm</a></li>
+                    <li><a href="/success">Success Key</a></li>
+                    <li><a href="/diy">Make your own E-Shop</a></li>
+                    <li><a href="/about">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<div class="container">
+    <footer>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/hk/">
+            <img alt="Creative Commons Licence" style="border-width:0" src="/images/copyright.png" />
+        </a>
+        <br>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/hk/">Creative Commons Attribution-ShareAlike 3.0 Hong Kong License</a>.
+        <br>
+        Logos and trademarks belong to their respective owners.
+    </footer>
+</div>
+{% endblock %}
