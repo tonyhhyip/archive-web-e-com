@@ -3,5 +3,15 @@
     "path": "/",
     "name": "home",
     "view": "index.html"
+  },
+  {
+    "path": "/about",
+    "name": "about",
+    "view": "about.html"
+  },
+  {
+    "path": "/intro",
+    "name": "intro",
+    "view": "intro.html"
   }
 ]
