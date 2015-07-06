@@ -1,4 +1,4 @@
-<?php
+<?hh //strict
 
 namespace App;
 
@@ -21,12 +21,12 @@ class AppKernel
     /**
      * @var \Symfony\Component\Routing\Matcher\UrlMatcher
      */
-	private $matcher;
+	private UrlMatcher $matcher;
 
     /**
      * @var \Twig_Environment
      */
-    private $environment;
+    private Twig_Environment $environment;
 
 	public function __construct()
 	{
@@ -35,26 +35,32 @@ class AppKernel
         $this->createEnvironment();
 	}
 
-    private function loadViews()
+    private function loadViews(): RouteCollection
     {
-        $collection = new RouteCollection();
-        $views = (array) json_decode(file_get_contents(__DIR__ . '/../config/views.json', true));
-        foreach ($views as $viewContent) {
-            $view = (array)$viewContent;
-            $route = new Route($view['path'], $view);
-            $collection->add($view['name'], $route);
+        if (filemtime(__DIR__ . '/../storage/views') < filemtime(__DIR__ . '/../config/views.json')) {
+            $collection = new RouteCollection();
+            $views = (array) json_decode(file_get_contents(__DIR__ . '/../config/views.json', true));
+            foreach ($views as $viewContent) {
+                $view = (array)$viewContent;
+                $route = new Route($view['path'], $view);
+                $collection->add($view['name'], $route);
+            }
+            file_put_contents(__DIR__ . '/../storage/views', serialize($collection));
+        } else {
+            $collection = file_get_contents(__DIR__ . '/../storage/views');
+            $collection = unserialize($collection);
         }
 
         return $collection;
     }
 
-    private function createMatcher(RouteCollection $collection)
+    private function createMatcher(RouteCollection $collection): ?UrlMatcher
     {
         $this->matcher = new UrlMatcher($collection, new RequestContext());
     }
 
 
-    private function createEnvironment()
+    private function createEnvironment(): void
     {
         $loader = new Twig_Loader_Chain();
         $fileLoader = new Twig_Loader_Filesystem();
@@ -63,14 +69,14 @@ class AppKernel
         $this->environment = new Twig_Environment($loader, [dirname(__DIR__) . '/storage']);
     }
 
-    private static function notFoundAction()
+    private static function notFoundAction(): Response
     {
         $response = new Response();
         $response->setStatusCode(404);
         return $response;
     }
 
-    public function handle(Request $request)
+    public function handle(Request $request): Response
     {
         $context = new RequestContext();
         $context->fromRequest($request);
