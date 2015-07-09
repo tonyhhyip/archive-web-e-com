@@ -1,9 +1,9 @@
-**E-commerce** become more and more important nowadays, to catch up with the modern world,
-knowing what is e-commerce is an important key of having a success business.
+**電子商貿** 在現今社會中日漸重要，要緊貼時代的步伐，
+了解電子商貿是踏上成功之路中重要一步。
 
-In this website, you will find the following:
+在這個網站中，你找到以下的要素：
 
-- [What is E-commerce](/intro)
-- [Benifit & Risk](/benifit)
-- [Success Key](/success)
-- [Make your own E-Shop](/diy)
+- [簡介](/intro)
+- [利與弊](/benifit)
+- [成功要素](/success)
+- [開始投入](/diy)
