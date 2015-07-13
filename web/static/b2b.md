@@ -1,8 +1,13 @@
 B2B (Business To Business)
 ---------------------------
 
-On the Internet, B2B (business-to-business), also known as e-biz, is the exchange of products, services or information (aka e-commerce) between businesses, rather than between businesses and consumers.
-The overall volume of B2B (Business-to-Business) transactions is much higher than the volume of B2C transactions.
-The primary reason for this is that in a typical supply chain there will be many B2B transactions involving sub components or raw materials, and only one B2C transaction, specifically sale of the finished product to the end customer.
+在網上，B2B也稱為e-biz，商戶之間以商品、服務或資訊進行交易。
+B2B交易量相比B2C或C2C的交易量更大，主要原因是大多交易涉及半成品或原材料以形成供應鏈。
+B2B對大量資訊交換有更大的動機，如此業務的效率能有效提升。
+SOAP (Simple Object Access Protocol), LDAP(Lightweight Directory Access Protocol)等Web服務也因此而開發。
 
-B2B have a great focus on large data exchange, such that the efficient of the business can improve. SOAP (Simple Object Access Protocol) is mainly used in this field.
+[LinkedIn](https://www.linkedin.com/)，中文名為領英，是一家商業客戶導向的社交網路服務網站。
+網站的目的是讓註冊用戶維護他們在商業交往中認識並信任的聯繫人，這些人被稱為「人脈」（Connections）。
+用戶可以邀請他認識的人成為人脈。
+
+商業用戶
