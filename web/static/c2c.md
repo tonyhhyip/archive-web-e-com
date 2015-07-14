@@ -1,12 +1,23 @@
 C2C (Customer To Customer)
 --------------------------
 
-Customer to Customer (C2C) markets are innovative ways to allow customers to interact with each other.
+C2C是以創新的方式讓客戶進行互動和交易。
 
-Most C2C websites, such as eBay, have both streamlined and globalized traditional person-to-person trading, which was usually conducted through such forms as garage sales, collectibles shows, flea markets and more, with their web interface. This facilitates easy exploration for buyers and enables the sellers to immediately list an item for sale within minutes of registering.
+C2C電子商貿涉及通過一些第三方電子系統便於消費者進行交易。
+在C2C網站建立後，可以進行出售、拍賣等交易。
+一個常見的例子就是網上拍賣，如eBay，如此客戶能拍賣貨品和其他消費者的競價出購買它。
+網上拍賣，平台通常收取固定費用或佣金。
+網站是作為中介，只為配對客戶，而不需要檢查交易產品的品質。
 
-When an product or service is listed on a C2C site, a nonrefundable insertion fee is charged based on the seller's opening bid on the item. Once the auction is completed, a final value fee is charged. This fee generally ranges from 1.25 percent to 5 percent of the final sale price.
+eBay是一個管理可讓全球民眾上網買賣物品C2C的線上拍賣及購物網站。
+每天都有數以百萬的家具、收藏品、電腦、車輛等各式各樣的貨物在eBay上被刊登、販售、賣出。
+這些物品常被他人給忽略，但如果能在全球性的大市場販售，那麼其身價就有可能水漲船高。
+只要物品不違反法律或是在eBay的禁止販售清單之內，服務及虛擬物品也在可販售物品的範圍之內，即可以在eBay刊登販售。
+可以公允的說，eBay推翻了以往那種規模較小的跳蚤市場，將買家與賣家拉在一起，創造一個永不休息的市場。
+大型的跨國公司，像是IBM會利用eBay的固定價或競價拍賣來銷售他們的新產品或服務。
+軟體工程師們藉著加入 eBay Developers Program，得以使用eBay API，創造許多與eBay相整合的軟體。
+截至2005年6月，已經有超過15,000人加入這個計畫，其中包含許多公司創造許多的軟體使的eBay買家與賣家能夠更方便。
 
-After the C2C site sets up the system in which bids could be placed, items can be put up for sale, transactions can be completed, seller fees are charged, and feedback can be left, while the C2C site stays in the background. For example, at the end of an auction, the C2C site notifies the buyer via e-mail that he or she has won. The C2C site also e-mails the seller to report who won and at what price the auction finished. At that point it's up to the seller and buyer finish the transaction independently of the C2C site.
-
-Many by-product with well security such as Paypal is created to satisfied the needs of payment.
+在eBay上的交易有多種付款方式，但只有使用PayPal付款才享有賣家保護，PayPal，1998年12月由 Peter Thiel 及 Max Levchin 建立，
+是一個總部在美國加利福尼亞州聖荷西市的網際網路服務商，允許在使用電子郵件來標識身份的用戶之間轉移資金，
+避免了傳統的郵寄支票或者匯款的方法。但是用這種支付方式轉帳時，PayPal收取一定數額的手續費。

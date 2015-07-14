@@ -10,4 +10,5 @@ SOAP (Simple Object Access Protocol), LDAP(Lightweight Directory Access Protocol
 網站的目的是讓註冊用戶維護他們在商業交往中認識並信任的聯繫人，這些人被稱為「人脈」（Connections）。
 用戶可以邀請他認識的人成為人脈。
 
-商業用戶
+商業用戶能夠使用LinkedIn推擴自身品牌，吸引商家選擇用戶提供的產品或服務，然後透過LinkedIn進行交易。
+根據專家估計，LinkedIn會於2015年超前Facebook成為最大的B2B交易平台。

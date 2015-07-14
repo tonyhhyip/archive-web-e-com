@@ -10,24 +10,14 @@ body {
     background: linear-gradient(#66D9EF, #0266C8);
     */
     background-color: #0266C8;
-    background-image: url("../images/background/foot.png");
+    background-image: url("../images/background/footer.png");
     background-repeat: no-repeat;
+    background-size: 60%;
     background-position: bottom left;
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.65em;
     color: #ffffff;
 }
-
-@media (min-width: 992px) {
-    body {
-        background-color: #0266C8;
-        background-image: url("../images/background/footer.png");
-        background-repeat: no-repeat;
-        background-size: 60%;
-        background-position: bottom left;
-    }
-}
-
 
 .footer {
     height: 345px;
