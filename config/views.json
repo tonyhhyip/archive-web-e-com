@@ -13,5 +13,10 @@
     "path": "/intro",
     "name": "intro",
     "view": "intro.html"
+  },
+  {
+    "path": "/success",
+    "name": "success",
+    "view": "success.html"
   }
 ]
