@@ -1,8 +1,9 @@
 B2C (Business To Customer)
 ---------------------------
 
-"Business-to-Consumer," usually abbreviated B2C, is a phrase that has become attached to electronic business activities that focus on retail transactions rather than activities conducted between two businesses. Most companies that sell directly to consumers can be referred to as B2C companies.
+B2C是最常見的電子商貿，屬企業對消費者的，一般以網路零售業為主，主要藉助於Internet開展線上銷售活動。
 
-One of the earliest B2C company is Amazon. Amazon.com started as an online bookstore, but soon diversified, selling DVDs, Blu-rays, CDs, video downloads / streaming, MP3 downloads / streaming, software, video games, electronics, apparel, furniture, food, toys and jewelry.
+其中最著名的是Amazon。Amazon是一家總部位於美國西雅圖的跨國電子商務企業，業務起始於線上書店，不久之後商品走向多元化。
+目前，亞馬遜的零售商品線涵蓋了圖書、音像製品、軟體、消費電子產品、家用電器、廚具、食品、玩具、母嬰用品、化妝品、日化用品、運動用具、服裝鞋帽、首飾等類目。
 
-In the later session of the website, we will talk about how to start up a web shop providing B2C service.
+在網站較後的部份，將會詳細介紹如何開設網上商店提供B2C服務。
