@@ -1,4 +1,4 @@
-<?hh //strict
+<?php
 
 use \Composer\Autoload\ClassLoader;
 

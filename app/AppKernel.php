@@ -1,4 +1,4 @@
-<?hh //strict
+<?php
 
 namespace App;
 
@@ -21,12 +21,12 @@ class AppKernel
     /**
      * @var \Symfony\Component\Routing\Matcher\UrlMatcher
      */
-	private UrlMatcher $matcher;
+	private $matcher;
 
     /**
      * @var \Twig_Environment
      */
-    private Twig_Environment $environment;
+    private $environment;
 
 	public function __construct()
 	{
@@ -35,7 +35,7 @@ class AppKernel
         $this->createEnvironment();
 	}
 
-    private function loadViews(): RouteCollection
+    private function loadViews()
     {
         if (filemtime(__DIR__ . '/../storage/views') < filemtime(__DIR__ . '/../config/views.json')) {
             $collection = new RouteCollection();
@@ -54,13 +54,13 @@ class AppKernel
         return $collection;
     }
 
-    private function createMatcher(RouteCollection $collection): ?UrlMatcher
+    private function createMatcher(RouteCollection $collection)
     {
         $this->matcher = new UrlMatcher($collection, new RequestContext());
     }
 
 
-    private function createEnvironment(): void
+    private function createEnvironment()
     {
         $loader = new Twig_Loader_Chain();
         $fileLoader = new Twig_Loader_Filesystem();
@@ -69,14 +69,14 @@ class AppKernel
         $this->environment = new Twig_Environment($loader, [dirname(__DIR__) . '/storage']);
     }
 
-    private static function notFoundAction(): Response
+    private static function notFoundAction()
     {
         $response = new Response();
         $response->setStatusCode(404);
         return $response;
     }
 
-    public function handle(Request $request): Response
+    public function handle(Request $request)
     {
         $context = new RequestContext();
         $context->fromRequest($request);
