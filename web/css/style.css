@@ -21,14 +21,14 @@ body {
 
 .footer {
     height: 345px;
+    margin-bottom: 3em;
 }
 
 footer {
-    margin-left: 5em;
+    margin-left: 20%;
     margin-top: 211px;
-    margin-bottom: 0;
     font-size: 0.8em;
-    color: black;
+    color: #FFFFFF;
 }
 
 .tech {
