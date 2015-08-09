@@ -1,0 +1,49 @@
+{% extends 'layouts/app.html.twig' %}
+
+{% block wrap %}
+<div id="wrap" class="container">
+
+    <h1>利與弊</h1>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#pros" aria-controls="pros" role="tab" data-toggle="tab">好處</a>
+        </li>
+        <li role="presentation">
+            <a href="#crons" aria-controls="crons" role="tab" data-toggle="tab">壞處</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active well well-lg" id="pros" style="color: #3B5998;">
+            <div class="row">
+                <div class="markdown col-sm-7" data-content="pros"></div>
+                <div class="col-sm-5">
+                    <img src="/images/benefit/shopping.jpg" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane well well-lg" id="crons" style="color: #3B5998;">
+            <div class="row">
+                <div class="markdown col-sm-7" data-content="crons"></div>
+                <div class="col-sm-5">
+                    <img src="/images/benefit/www.jpg" class="img-thumbnail">
+                    <img src="/images/benefit/e-shop.jpg" width="300" class="img-thumbnail" style="margin-top: 1em;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ parent() }}
+<script type="text/javascript">
+    !function ($) {
+        $('.nav-tabs a').bind('click', function (e){
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    }(jQuery);
+</script>
+{% endblock %}

@@ -18,5 +18,15 @@
     "path": "/success",
     "name": "success",
     "view": "success.html"
+  },
+  {
+    "path": "/e-shop",
+    "name": "e-shop",
+    "view": "e-shop.html"
+  },
+  {
+    "path": "/benefit",
+    "name": "benefit",
+    "view": "benefit.html"
   }
 ]

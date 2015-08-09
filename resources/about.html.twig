@@ -4,48 +4,61 @@
 <div id="wrap" class="container">
 
     <div class="row">
-        <img src="/images/us.jpg" class="img-thumbnail">
-    </div>
 
-    <div class="row">
-        <div class="container">
-            <h3 class="brand-red">葉浩匡</h3>
-            <p>
-                數學、資訊科技資優生，理商雙修，自修IT，
-                熱愛創造和探究新事物，尤其熱愛開放式源碼(Open Source)
-                現任 <strong style="color: #006F17">香港學生資訊科技年會 (SITCON x HK)</strong>主席
-            </p>
-            <p>
-                能完成這個網站，我要感謝我的拍擋，徐嘉敏，的信任。
-                我使用了HTML 5以及其他Javascript技術完成這個網站。
-            </p>
+
+        <div class="col-sm-5">
+            <img src="/images/about.png" class="img-thumbnail center-block" style="max-height: 1024px;">
+        </div>
+
+
+        <div class="col-sm-5">
+            <div class="container">
+                <h3>葉浩匡 (Tony Yip)</h3>
+                <p>
+                    數學、資訊科技資優生，理商雙修，自修IT，
+                    熱愛創造和探究新事物，尤其熱愛開放原始碼(Open Source)，
+                    現任 <strong>香港學生資訊科技年會 (SITCON x HK)</strong>主席
+                </p>
+                <p>
+                    能完成這個網站，我要感謝我的拍擋，徐嘉敏，的信任。
+                    我使用了HTML 5以及其他Javascript技術完成這個網站。
+                </p>
+            </div>
+            <hr>
+            <div class="container">
+                <h3>徐嘉敏 (Ka)</h3>
+                <p>
+                    活潑好動又勇於嘗試的一個女子，修讀全理科，熱愛書畫，尤其畫漫畫，閒時最愛閉關於房內畫畫陶冶性情。
+                    是這個網站的設計師
+                </p>
+                <p>
+                    加入這個比賽前，我對電子商貿一無所知。
+                    在比賽中，我了解到電子商貿，又發現到這是一個嶄新的世界。
+                    我從中獲得了大量的經驗
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="container">
+                <h3>特別鳴謝:</h3>
+                <ul>
+                    <li>jQuery Foundation, Inc. - jQuery</li>
+                    <li>Twitter, Inc. - Bootstrap</li>
+                    <li>Jack Moore - jQuery Colorbox</li>
+                    <li>Dave Hall - html5media</li>
+                </ul>
+            </div>
         </div>
     </div>
-    <hr>
-    <div class="row">
-        <div class="container">
-            <h3 class="brand-red">徐嘉敏</h3>
-            <p>
-                活潑好動又勇於嘗試的一個女子，修讀全理科，熱愛書畫，尤其畫漫畫，閒時最愛閉關於房內畫畫陶冶性情。
-                是這個網站的設計師
-            </p>
-            <p>
-                加入這個比賽前，我對電子商貿一無所知。
-                在比賽中，我了解到電子商貿，又發現到這是一個嶄新的世界。
-                我從中獲得了大量的經驗
-            </p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="container">
-            <h3 class="brand-red">特別鳴謝:</h3>
-            <ul>
-                <li>jQuery Foundation, Inc. - jQuery</li>
-                <li>Twitter, Inc. - Bootstrap</li>
-            </ul>
-        </div>
-    </div>
-
 </div>
+{% endblock %}
+
+{% block scripts %}
+{{ parent() }}
+<script type="text/javascript">
+    !function($) {
+        $('.col-sm-5:last .container').css('max-width', $('.col-sm-5').css('width'));
+    }(jQuery);
+</script>
 {% endblock %}

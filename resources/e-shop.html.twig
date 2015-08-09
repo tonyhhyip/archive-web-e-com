@@ -1,0 +1,35 @@
+{% extends 'layouts/app.html.twig' %}
+
+{% block wrap %}
+<div id="wrap" class="container">
+    <div class="markdown container" data-content="e-shop"></div>
+
+    <div class="container">
+        <div class="markdown" data-content="wordpress"></div>
+        <div class="container">
+            <video src="/static/video/wordpress.mp4" width="800" height="600" controls preload="auto"></video>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="markdown" data-content="shopping"></div>
+        <div class="container">
+            <video src="/static/video/shopping.mp4" width="800" height="600" controls preload="auto"></video>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="markdown" data-content="woocommerce"></div>
+        <div class="container">
+            <video src="/static/video/woocommerce.mp4" width="800" height="600" controls preload="auto"></video>
+        </div>
+    </div>
+
+    <div class="markdown container" data-content="next"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ parent() }}
+<script src="//api.html5media.info/1.1.8/html5media.min.js"></script>
+{% endblock %}
