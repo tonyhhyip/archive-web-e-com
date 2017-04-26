@@ -49,3 +49,5 @@ crashlytics-build.properties
 
 /vendor
 
+*.log*
+
